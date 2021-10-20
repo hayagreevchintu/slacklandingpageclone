@@ -6,7 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>codedamn Project</title> 
         <style>
-            
+            * {
+              border: 1px solid red;;  
+            }
             html, body {
                 overflow: hidden;
                 margin: 0;
@@ -23,31 +25,27 @@
             .para1, .para2, .userText {
                 font-size: large;
             }
-            .user {
-                width: 120%;
-                height: 10vh;
-                border: 1px rgb(192, 189, 189) solid;
-                margin-left: -10%;
-                margin-bottom: -1px;
-                overflow: hidden;
-                padding: -10;
-            }
             .userText {
                 color: white;
+                width: fit-content;
                 position: relative;
-                left: 12%;
-                bottom:15%;
+                left: 10%;
             }
             .userName {
                 position: relative;
                 color: white;
                 left: 18%;
                 bottom: 85%;
+                width: fit-content;
             }
             .create-channel-button {
                 background-color: #0a8d48;
                 color: white; 
                 border-radius: 5px;
+                padding-top: 0.5%;
+                padding-bottom: 0.5%;
+                padding-left: 0.5%;
+                padding-right: 0.5%;
             }
             .logo {
                 width: 100px;
@@ -77,6 +75,16 @@
                 border-radius: 50%;
                 display: inline-block;
             }
+            .edit {
+                position: relative;
+                background-color: white;
+                height: 35px;
+                width: 35px;
+                left: 80%;
+                top: -8%;
+                border-radius: 50%;
+                display: inline-block;
+            }
         </style>
 	</head>
 	<body>
@@ -89,12 +97,10 @@
         </div>
         <div class="top-box"></div> 
        <div class="left-box">
-           <div class="user">
-               <p class="userText"><strong>Cometchat (e)</strong></p>
-               <span class="dot"></span>
-               <p class="userName">Hayagreev</p>
-               
-           </div>
+            <p class="userText"><strong>Cometchat (e)</strong></p>
+        <!--    <span class="dot"></span>
+            <p class="userName">Hayagreev</p>
+            <span class="edit"></span> -->
        </div>
     </body>
 </html>
