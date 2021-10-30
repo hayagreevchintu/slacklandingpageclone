@@ -5,10 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>codedamn Project</title> 
-        <style>
-            * {
-              border: 1px solid red;;  
-            }
+        <style> 
             html, body {
                 overflow: hidden;
                 margin: 0;
@@ -29,14 +26,15 @@
                 color: white;
                 width: fit-content;
                 position: relative;
-                left: 10%;
+                left: 7%;
+                bottom: 1%;
             }
             .userName {
                 position: relative;
                 color: white;
-                left: 18%;
-                bottom: 85%;
                 width: fit-content;
+                left: 12%;
+                bottom: 7.8%;
             }
             .create-channel-button {
                 background-color: #0a8d48;
@@ -66,25 +64,169 @@
                 overflow: hidden;
             }
             .dot {
-                position: relative;
-                left: 14%;
-                bottom: 35%;
-                height: 10px;
-                width: 10px;
                 background-color: green;
                 border-radius: 50%;
+                width: 10px;
+                height: 10px;
                 display: inline-block;
+                position: relative;
+                left: 7%;
+                bottom: 3%;
             }
             .edit {
                 position: relative;
                 background-color: white;
                 height: 35px;
                 width: 35px;
-                left: 80%;
-                top: -8%;
+                left: 75%;
+                bottom: 15%;
                 border-radius: 50%;
                 display: inline-block;
             }
+            .horizontal-line {
+                border-top: 0.001px white;
+                position: relative;
+                bottom: 1.1%;
+            }
+            .horizontal-line1 {
+                border-top: 0.001px white;
+                position: relative;
+                bottom: 15%;
+            }
+            .gg-pen {
+                box-sizing: border-box;
+                position: relative;
+                display: block;
+                left: 79%;
+                bottom: 18.6%;
+                transform: rotate(-45deg) scale(var(--ggs,1));
+                width: 14px;
+                height: 4px;
+                border-right: 2px solid transparent;
+                box-shadow:
+                0 0 0 2px,
+                inset -2px 0 0;
+                border-top-right-radius: 1px;
+                border-bottom-right-radius: 1px;
+                margin-right: -2px
+            }
+            .gg-pen::after,
+            .gg-pen::before {
+                content: "";
+                display: block;
+                box-sizing: border-box;
+                position: absolute
+            }
+            .gg-pen::before {
+                background: currentColor;
+                border-left: 0;
+                right: -6px;
+                width: 3px;
+                height: 4px;
+                border-radius: 1px;
+                top: 0
+            }
+            .gg-pen::after {
+                width: 8px;
+                height: 7px;
+                border-top: 4px solid transparent;
+                border-bottom: 4px solid transparent;
+                border-right: 7px solid;
+                left: -11px;
+                top: -2px
+            }
+            .thread {
+                position: relative;
+                bottom: 15%;
+                padding: 0%;
+                margin: 0%;
+                background-color: transparent;
+                color: white;
+                border: none;
+                background: none;
+                left: 15%;
+                font-size: 14px;  
+            }
+            .message-icon {
+                position: relative;
+                width: 15px;
+                height: 15px;
+                right: 8%;
+                bottom: 14.7%;
+            }
+            .at {
+                color: white;
+                position: relative;
+                bottom: 16%;
+                left: 7.4%;
+            }
+            .mentions {
+                position: relative;
+                bottom: 15%;
+                padding: 0%;
+                margin: 0%;
+                background-color: transparent;
+                color: white;
+                border: none;
+                background: none;
+                left: 15.4%;
+                bottom: 20.7%;
+                font-size: 14px;  
+            }
+            .options {
+                width: 15px;
+                height: 15px;
+                background-image: radial-gradient(circle, white 1.5px, transparent 1.65px);
+                background-size: 100% 33.33%;    
+                position: relative;
+                bottom: 19%;
+                left: 7%;
+            }
+            .more {
+                position: relative;
+                bottom: 15%;
+                padding: 0%;
+                margin: 0%;
+                background-color: transparent;
+                color: white;
+                border: none;
+                background: none;
+                left: 15.4%;
+                bottom: 21.3%;
+                font-size: 14px;  
+            }
+            .horizontal-line2 {
+                border-top: 0.001px white;
+                position: relative;
+                bottom: 20%;
+            }
+            .triangle-down {
+                height: 0;
+                width: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 5px solid white;
+                position: relative;
+                bottom: 18.35%;
+                left: 7.4%;
+            }
+            .channels {
+                position: relative;
+                color: white;
+                bottom: 20.1%;
+                left: 13%;
+                font-size: 14px;
+                background-color: transparent;
+                color: white;
+                border: none;
+                background: none;
+            }
+            .horizontal-line3 {
+                border-top: 0.001px white;
+                position: relative;
+                bottom: 19.5%;
+            }
+
         </style>
 	</head>
 	<body>
@@ -96,11 +238,25 @@
             <button class="create-channel-button">Create Channel</button> 
         </div>
         <div class="top-box"></div> 
-       <div class="left-box">
+        <div class="left-box">
+            <hr class="horizontal-line">
             <p class="userText"><strong>Cometchat (e)</strong></p>
-        <!--    <span class="dot"></span>
+            <span class="dot"></span>
             <p class="userName">Hayagreev</p>
-            <span class="edit"></span> -->
+            <span class="edit"></span>
+            <div class="gg-pen"></div>
+            <hr class="horizontal-line1">
+            <button class="thread">Thread</button>
+            <img src="assets/images/message.png"alt="message icon" class="message-icon">
+            <p class="at">@</p>
+            <button class="mentions">Mentions and Replies</button>
+            <div class="options"></div>
+            <button class="more">More</button>
+            <hr class="horizontal-line2">
+            <div class="triangle-down"></div>
+            <button class="channels">Channels</button>
+            <hr class="horizontal-line3">
        </div>
+      
     </body>
 </html>
