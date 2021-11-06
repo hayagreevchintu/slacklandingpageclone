@@ -306,6 +306,29 @@
                 top: 50%;
                 transform: rotate(110deg);
             }
+            .input {
+                position: relative;
+                background: transparent;
+                border: white 1px solid;
+                width: 50%;
+                left: 28.5%;
+                bottom: 56%;
+                border-radius: 5px;
+            }
+            .input::placeholder {
+                text-align: center;
+            }
+            .question-mark {
+                border-radius: 50%;
+                border: 1.5px solid white;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 0.5%;
+                left: 79.8%;
+                color: white;
+                text-align: center;
+            }
         </style>
 	</head>
 	<body>
@@ -321,6 +344,8 @@
                 <div class="vl"></div>
                 <div class="al"></div>
             </div>
+            <input type="text" class="input" placeholder="Search tutorial daltonic">
+            <div class="question-mark">?</div>
         </div> 
         <div class="left-box">
             <hr class="horizontal-line">
@@ -347,6 +372,6 @@
             <button class="direct-messages">Direct Messages</button>
             <hr class="horizontal-line5">
             <button class="logout">Logout</button>
-        </div>
+        </div> 
     </body>
-</html>
+</html
