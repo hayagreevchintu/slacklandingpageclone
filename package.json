@@ -1,0 +1,25 @@
+{
+  "name": "slacklandingpageclone",
+  "version": "1.0.0",
+  "description": "This is an almost-clone of the slack landing page. I have added my touch to the design which is why this is an almost-clone of the existing slack landing page. This page is not yet responsive and I have built this completely using CSS. The buttons don't do anything yet but I'm thinking of adding backend functionality at a later point in time. I have added the screenshot of slack's default landing page that I have used as a reference to build the clone.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hayagreevvaradarajan/slacklandingpageclone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hayagreevvaradarajan/slacklandingpageclone/issues"
+  },
+  "homepage": "https://github.com/hayagreevvaradarajan/slacklandingpageclone#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
